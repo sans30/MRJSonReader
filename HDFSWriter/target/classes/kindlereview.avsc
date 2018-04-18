@@ -1,0 +1,42 @@
+{
+  "namespace" : "io.saagie.avro",
+  "name" : "kindlereview",
+  "type" : "record",
+  "fields" : [ {
+    "name" : "reviewerID",
+    "type" : "string"
+  }, {
+    "name" : "asin",
+    "type" : "string"
+  }, {
+    "name" : "reviewerName",
+    "type" : "string",
+    "default": ""
+  }, {
+    "name" : "helpful",
+    "type" : {
+      "type" : "array",
+      "items" : "int"
+    }
+  }, {
+    "name" : "reviewText",
+    "type" : "string",
+    "default": ""
+  }, {
+    "name" : "overall",
+    "type" : "double",
+    "default": 0.0
+  }, {
+    "name" : "summary",
+    "type" : "string",
+    "default": ""
+  }, {
+    "name" : "unixReviewTime",
+    "type" : "double",
+    "default": 0.0
+  }, {
+    "name" : "reviewTime",
+    "type" : "string",
+    "default": ""
+  } ]
+}
